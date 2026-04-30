@@ -1,0 +1,28 @@
+{
+  "name": "team-task-manager-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 3000",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0 --port 4173",
+    "start": "serve -s dist -l tcp://0.0.0.0:${PORT:-4173}"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "lucide-react": "^0.468.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0",
+    "serve": "^14.2.4",
+    "socket.io-client": "^4.8.3"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.0.1",
+    "vite": "^8.0.10"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  }
+}
