@@ -22,6 +22,6 @@ app.use((req, res) => {
   }
 });
 
-app.listen(port, '0.0.0.0', () => {
-  console.log(`Express static server listening on 0.0.0.0:${port}`);
+app.listen(port, () => {
+  console.log(`Express static server listening on port ${port}`);
 });
