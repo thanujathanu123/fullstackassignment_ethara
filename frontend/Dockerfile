@@ -8,6 +8,8 @@ RUN npm run build
 
 # Production stage
 FROM nginx:alpine
+ENV PORT=8080
+EXPOSE 8080
 # Copy custom nginx config template
 COPY nginx.conf.template /etc/nginx/templates/default.conf.template
 # Copy built assets from build stage
